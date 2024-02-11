@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opakovki goce delchev</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+       
+        /* Custom styles for the sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Style for the call-to-action button */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+       
+        .navbar-dark .navbar-nav .nav-item .nav-link {
+         
+           text-transform: uppercase;
+          
+           font-size: 19px;
+        }
+
+        .navbar-dark .navbar-nav .nav-item:hover .nav-link {
+            color: greenyellow;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Your Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">αρχή</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Προϊόντα</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#our-materials">Τα Υλικά μας</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Υπηρεσίες</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Επικοινωνία</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="flags/gr.png" alt="">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('BG')"><img src="flags/bg.png" /></a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('EN')"><img src="flags/us.png" /></a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('GR')"><img src="flags/gr.png" /></a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4">
+
+        <!-- Home Section -->
+        <section id="home">
+            <div class="jumbotron">
+                <h1 class="display-4">Welcome to Your Shop</h1>
+                <p class="lead">Discover amazing products and great deals.</p>
+                <hr class="my-4">
+                <p>Explore our wide range of products to find exactly what you need.</p>
+                <a class="btn btn-primary btn-lg" href="#products" role="button">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="mt-4">
+            <h2 class="text-center">Featured Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Description of Product 1.</p>
+                            <a href="#" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+        </section>
+        <!-- Our Materials Section -->
+<section id="our-materials" class="mt-4">
+    <div class="container">
+        <h2>Τα Υλικά μας</h2>
+        <div class="row">
+            <!-- Material 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Υλικό 8</h5>
+                        <p class="card-text">Περιγραφή Υλικού 1.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Material 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="material2.jpg" class="card-img-top" alt="Material 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Υλικό 7</h5>
+                        <p class="card-text">Περιγραφή Υλικού 2.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Material 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="material3.jpg" class="card-img-top" alt="Material 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Υλικό 6</h5>
+                        <p class="card-text">Περιγραφή Υλικού 3.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more material cards as needed -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Υλικό 5</h5>
+                        <p class="card-text">Περιγραφή Υλικού 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Υλικό 4</h5>
+                        <p class="card-text">Περιγραφή Υλικού 4.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Υλικό 1</h5>
+                        <p class="card-text">Περιγραφή Υλικού 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Υλικό 2</h5>
+                        <p class="card-text">Περιγραφή Υλικού 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Υλικό 3</h5>
+                        <p class="card-text">Περιγραφή Υλικού 3.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+         
+<!-- Services Section -->
+<section id="services" class="mt-4">
+    <div class="container">
+        <h2>Οι Υπηρεσίες μας</h2>
+
+        <div class="row">
+
+            <!-- Service 1 Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="service1.jpg" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Υπηρεσία 1</h5>
+                        <p class="card-text">Πριν ξεκινήσει η παραγωγή της συσκευασίας, πρέπει να σχεδιαστεί η δομή και η εμφάνισή της. Ως υπηρεσία, μπορούμε να προσφέρουμε ολοκληρωμένη ανάπτυξη ιδέας, σχεδιασμό και παραγωγή εξωτερικού σχεδιασμού συσκευασιών οποιουδήποτε τύπου - χαρτί, χαρτόνι, μέταλλο, ξύλο και πλαστικό.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="service2.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Υπηρεσία 2</h5>
+                        <p class="card-text">Πριν ξεκινήσει η παραγωγή της συσκευασίας, πρέπει να σχεδιαστεί η δομή και η εμφάνισή της. Ως υπηρεσία, μπορούμε να προσφέρουμε ολοκληρωμένη ανάπτυξη ιδέας, σχεδιασμό και παραγωγή εξωτερικού σχεδιασμού συσκευασιών οποιουδήποτε τύπου - χαρτί, χαρτόνι, μέταλλο, ξύλο και πλαστικό.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="service3.jpg" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Υπηρεσία 3</h5>
+                        <p class="card-text">Πριν ξεκινήσει η παραγωγή της συσκευασίας, πρέπει να σχεδιαστεί η δομή και η εμφάνισή της. Ως υπηρεσία, μπορούμε να προσφέρουμε ολοκληρωμένη ανάπτυξη ιδέας, σχεδιασμό και παραγωγή εξωτερικού σχεδιασμού συσκευασιών οποιουδήποτε τύπου - χαρτί, χαρτόνι, μέταλλο, ξύλο και πλαστικό..</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more service cards as needed -->
+
+        </div>
+    </div>
+</section>
+       <!-- Working Hours Section -->
+<section id="working-hours" class="mt-4" >
+    <div class="container" style="max-width: 600px;">
+        <h2>Είστε ευπρόσδεκτοι εδώ στη διεύθυνση</h2>
+
+        <p><strong>Διεύθυνση:</strong> Panairski Livadi 2, 2900 Goce Delchev</p>
+
+        <p><strong>Ωρες εργασίας:</strong></p>
+        <table class="table" style="border: 2px solid;">
+            <thead>
+                <tr>
+                    <th scope="col">Ημέρα</th>
+                    <th scope="col">Ωρες</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Δευτέρα</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Τρίτη</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Τετάρτη</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Πέμπτη</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Παρασκευή</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Σάββατο</td>
+                    <td>9:00ч.–13:00ч.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Τηλέφωνο:</strong> 089 055 1479</p>
+    </div>
+</section>
+
+
+        <!-- Contact Section -->
+       <!-- Contact Section -->
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Επικοινωνήστε μαζί μας</h2>
+                <p>Έχετε ερωτήσεις ή χρειάζεστε βοήθεια; Επικοινωνήστε με την ομάδα υποστήριξής μας</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Add your contact form here -->
+                <form>
+                    <!-- Form fields go here -->
+                    <button type="submit" class="btn btn-primary">Να στείλετε μήνυμα</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <!-- Update the embedded Google Map with your provided link -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.5100973303153!2d23.74620610020329!3d41.54933903389198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sbg!2sbg!4v1705266670495!5m2!1sbg!2sbg" 
+                width="100%" 
+                height="300px"
+        
+                  allowfullscreen=""
+                   loading="lazy" 
+                   referrerpolicy="no-referrer-when-downgrade">
+        
+                   </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </div>
+
+    <footer class="bg-dark text-white mt-5 py-2">
+        <div class="container text-center">
+            <p>&copy; 2024 Το κατάστημά σας | Αγορά για συσκευασία</p>
+            <!-- Subscription form can be added here -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+
+    <!-- Your custom scripts -->
+    <script src="language.js">
+    </script>
+
+</body>
+
+</html>

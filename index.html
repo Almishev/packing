@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shop Name</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+       
+        /* Custom styles for the sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Style for the call-to-action button */
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+       
+        .navbar-dark .navbar-nav .nav-item .nav-link {
+         
+           text-transform: uppercase;
+          
+           font-size: 15px;
+           margin-top: 6px;
+        }
+
+        .navbar-dark .navbar-nav .nav-item:hover .nav-link {
+            color: whitesmoke;
+            text-decoration: underline;
+        }
+        #carouselExample {
+            height: 70vh; /* 30% of the viewport height */
+            margin-bottom: 30px;
+        }
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .carousel-item {
+            height: 100%;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 20px;
+           
+        }
+
+        @media (max-width: 768px) {
+            body {
+        background-color: whitesmoke; /* Test background color */
+    }
+    .carousel-caption {
+        margin-bottom: 20px !important;
+    }
+}
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Опаковки-Гд ЕООД</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Начало</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Продукти
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#products-customer">Опаковки по спецификация на клиента</a>
+                        <a class="dropdown-item" href="#products-store">Стандартни опаковки на склад</a>
+                    
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#our-materials">Нашите материали</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакти</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="flags/bg.png" alt="">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('BG')"><img src="flags/bg.png" alt=""/></a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('EN')"><img src="flags/us.png" alt=""/></a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('GR')"><img src="flags/gr.png" alt=""/></a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        <h1 class="mb-4" style="text-align: center;">Добре дошли в Опаковки-Гд</h1>
+        <!-- Home Section -->
+        <section id="home">
+            <div id="textCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="home/pic-1.jpg" class="d-block w-100" alt="Image 1">
+                        <div class="carousel-caption" style="margin-bottom: 70px;">
+                            <h5>Индивидуален Дизайн</h5>
+                            <p> Работим с вас, за да създадем опаковка, която отразява уникалността на вашия продукт и привлича вниманието на клиентите.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="home/pic-1.jpg" class="d-block w-100" alt="Image 2">
+                        <div class="carousel-caption" style="margin-bottom: 70px;">
+                            <h5>Висококачествени Материали</h5>
+                            <p>Използваме само висококачествени материали, гарантирайки здравина и елегантност на всяка опаковка.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="home/pic-1.jpg" class="d-block w-100" alt="Image 3">
+                        <div class="carousel-caption" style="margin-bottom: 70px;">
+                            <h5>Екологичност</h5>
+                            <p>Стремим се да бъдем приятелски на околната среда, като предлагаме опции за екологични и устойчиви опаковки.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="home/pic-1.jpg" class="d-block w-100" alt="Image 3">
+                        <div class="carousel-caption" style="margin-bottom: 70px;">
+                            <h5>Гъвкави Решения</h5>
+                            <p>Независимо дали сте стартъп, малък бизнес или голяма корпорация, ние предлагаме гъвкави решения, които отговарят на вашите нужди.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#textCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#textCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        
+                     
+            <div class="jumbotron">
+               
+                <p class="lead">Изработваме прекрасни продукти с внимание към детайлите, което ни отличава.</p>
+                <hr class="my-4">
+                <p>Ние предоставяме висококачествени услуги за създаване на персонализирани и професионални опаковки, които не само предпазват вашия продукт, но и му придават уникален характер и стил. Нашите опаковки са проектирани с внимание към детайла и изградени с цел да засилват визията и идентичността на вашия бранд.</p>
+                
+               
+            </div>
+        </section>
+
+        <!-- Products Section Store -->
+       
+        
+        <section id="products-store" class="mt-4">
+            <h2 class="text-center">Стандартни опаковки на склад</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;"  class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                    
+                    
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+            
+            
+                
+                <!-- Add more product cards as needed -->
+           
+        </section>
+
+        <!--Product section Customer-->
+        <section id="products-customer" class="mt-4">
+            <h2 class="text-center">Опаковки по спецификация</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;"  class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="products/procuct1.avif" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                    
+                    
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+            
+            
+                
+                <!-- Add more product cards as needed -->
+           
+        </section>
+        <!-- Our Materials Section -->
+<section id="our-materials" class="mt-4">
+    <div class="container">
+        <h2>Нашите материали</h2>
+        <div class="row">
+            <!-- Material 1 -->
+            <div class="col-lg-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="materials/m1.avif" style="height: 400px;" class="card-img-top" alt="Material 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Хартиени И Полиетиленови Етикети</h5>
+                        <p class="card-text">Като допълнение на всевъзможните типове опаковки които предлагаме, можем да включим и етикети за нашите опаковки с пълноцветен печат и размер от 10 х 10 мм до 120 х 300 см, както и външни транспаранти, информационни и рекламни пана за опакованата стока.
+ Друга част от този сектор са найлоновите и стреч фолиата които предлагаме за опаковане на палета и кашони, и които често вървят ръка за ръка с етикетите за тях и самозалепващи лепенки и полиетилен и хартия.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Material 2 -->
+            <div class="col-lg-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="materials/m1.avif" style="height: 400px;" class="card-img-top" alt="Material 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Хартия, Картон, Велпапе И Други Целулозни Материали</h5>
+                        <p class="card-text">Многообразието от опаковки които предлагаме е най-изчерпателното в страната, ако не и в целия регион на Югоизточна Европа. Като се започне от бели, напечатени кутии, през всички видове печат - флексо, офсет, дигитален, сито и гравюра и допълване на офертата с всички видове довършителни възможности - сгъване на всички видове шевове, прозорци, топъл печат, персонализация с баркодове, ламиниране, лак, и други.</p>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Add more material cards as needed -->
+           
+        
+           
+            
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="mt-4">
+    <div class="container">
+        <h2>Нашите услуги</h2>
+
+        <div class="row">
+
+            <!-- Service 1 Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="services/service1.jpg" class="card-img-top" alt="Service 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Проектиране, И Дизайн На Опаковки</h5>
+                        <p class="card-text"> цялостно изработване на концепция, проектиране и изработка на графичен външен дизайн на опаковки от всякакъв тип - хартиени, картонени, метални, дървени и пластмасови. Също така сме в състояние да предложим варианти за намаляване и оптимизиране на производствените разходи, с цел да се постигне оптимална цена.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="services/service2.jpg" class="card-img-top" alt="Service 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Service 2</h5>
+                        <p class="card-text">Description of Service 2 in 20 words or less. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3 Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="services/service3.jpg" class="card-img-top" alt="Service 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Service 3</h5>
+                        <p class="card-text">Description of Service 3 in 20 words or less. Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more service cards as needed -->
+
+        </div>
+    </div>
+</section>
+
+<section id="working-hours" class="mt-4" style="background-image: url('products/address.jpg'); background-size: cover; background-position: center;">
+    <div class="container" style="max-width: 600px; background-color: rgba(214, 200, 219, 0.8); padding: 20px;">
+        <h2>You are welcome</h2>
+        <p><strong>Address:</strong> Panairski Livadi 2, 2900 Goce Delchev</p>
+
+        <p><strong>Working Hours:</strong></p>
+        <table class="table" style="border: 2px solid;">
+            <thead>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Thrusday</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>9:00ч.–12:30ч., 13:30ч.–17:00ч.</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>9:00ч.–13:00ч.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Phone:</strong> 089 055 1479</p>
+    </div>
+</section>
+        <!-- Contact Section -->
+       <!-- Contact Section -->
+<!-- Contact Section -->
+<!-- Contact Section -->
+<section id="contact" class="mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Контак с нас</h2>
+                Панаирски Ливади 2, 2900 Гоце Делчев
+                <p>Имате въпроси - свържете се с нас.</p>
+                <p>0877382224</p>
+                <p>antonalmishev@abv.bg</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Add your contact form here -->
+                <div>
+                    <!-- Form fields go here -->
+                    <img src="products/address2jpg.jpg" height="400px" width="700px" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <!-- Update the embedded Google Map with your provided link -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.5100973303153!2d23.74620610020329!3d41.54933903389198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sbg!2sbg!4v1705266670495!5m2!1sbg!2sbg" 
+                width="100%" 
+                height="300px"
+        
+                  allowfullscreen=""
+                   loading="lazy" 
+                   referrerpolicy="no-referrer-when-downgrade">
+        
+                   </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </div>
+
+    <footer class="bg-dark text-white mt-5 py-2">
+        <div class="container text-center">
+            <p>&copy; 2024 Гоце Делчев | Магазин за опаковъчни материали в Гоце Делчев</p>
+            <!-- Subscription form can be added here -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+
+    <!-- Your custom scripts -->
+    <script src="language.js"> </script>
+
+</body>
+
+</html>
