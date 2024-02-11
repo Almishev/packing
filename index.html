@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Your Shop Name</title>
 
     <!-- Bootstrap CSS -->
@@ -14,7 +15,7 @@
     <style>
         /* Image section*/
         .image-section{
-            background: url("home/background.png");
+            background: url("/home/background.png");
             height: 33rem;
             background-position: center center;
             background-attachment: fixed;
@@ -75,8 +76,13 @@
         @media (max-width: 768px) {
             body {
         background-color: whitesmoke; /* Test background color */
+        font-size: 16px;
+        line-height: 1.1;
     }
+    
+  
     .carousel-caption {
+       
         margin-bottom: 1px !important;
     }
     .contact-img img{
@@ -143,7 +149,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="home/pic-1.jpg" class="d-block w-100" alt="Image 1">
-                        <div class="carousel-caption" style="margin-bottom: 70px;">
+                        <div class="carousel-caption" style="margin-bottom: 70px; ">
                             <h5>Индивидуален Дизайн</h5>
                             <p> Работим с вас, за да създадем опаковка, която отразява уникалността на вашия продукт и привлича вниманието на клиентите.</p>
                         </div>
