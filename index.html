@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Custom CSS -->
     <style>
-       
+        /* Image section*/
+        .image-section{
+            background: url("/home/background.png");
+            height: 33rem;
+            background-position: center center;
+            background-attachment: fixed;
+        }
         /* Custom styles for the sections */
         section {
             margin-bottom: 40px;
@@ -71,7 +77,10 @@
         background-color: whitesmoke; /* Test background color */
     }
     .carousel-caption {
-        margin-bottom: 20px !important;
+        margin-bottom: 1px !important;
+    }
+    .contact-img img{
+        width: 380px;
     }
 }
         
@@ -126,11 +135,11 @@
     </nav>
 
     <!-- Content -->
-    <div class="container mt-4">
+    <div class="container-fluid mt-4">
         <h1 class="mb-4" style="text-align: center;">Добре дошли в Опаковки-Гд</h1>
         <!-- Home Section -->
-        <section id="home">
-            <div id="textCarousel" class="carousel slide" data-ride="carousel">
+        <section id="home" class="container">
+            <div id="textCarousel" class="carousel slide container" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="home/pic-1.jpg" class="d-block w-100" alt="Image 1">
@@ -172,7 +181,7 @@
             </div>
         
                      
-            <div class="jumbotron">
+            <div class="jumbotron container">
                
                 <p class="lead">Изработваме прекрасни продукти с внимание към детайлите, което ни отличава.</p>
                 <hr class="my-4">
@@ -185,7 +194,7 @@
         <!-- Products Section Store -->
        
         
-        <section id="products-store" class="mt-4">
+        <section id="products-store" class="mt-4 container">
             <h2 class="text-center">Стандартни опаковки на склад</h2>
             <div class="row mt-4">
                 <div class="col-md-4 mb-4">
@@ -260,7 +269,7 @@
         </section>
 
         <!--Product section Customer-->
-        <section id="products-customer" class="mt-4">
+        <section id="products-customer" class="mt-4 container">
             <h2 class="text-center">Опаковки по спецификация</h2>
             <div class="row mt-4">
                 <div class="col-md-4 mb-4">
@@ -465,7 +474,27 @@
         <p><strong>Phone:</strong> 089 055 1479</p>
     </div>
 </section>
-        <!-- Contact Section -->
+        <!-- Parax Section -->
+        <div class="container-fluid image-section p-5">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-column text-center justify-content-center align-items-center">
+                    <h3 class="display-5 text-white">Lorem ipsum dolor sit amet.</h3>
+                    <div>
+                        <button class="btn btn-info" style="width: 120px; height: 50px; font-size: 22px;">
+                        <a href="https://www.facebook.com/profile.php?id=61550894019625">  
+                            <i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i>
+                        </a>
+                        </button>
+                        <button class="btn btn-danger" style="width: 120px; height: 50px; font-size: 22px;">
+                          <a href="https://www.instagram.com/opakovkigotsedelchev/">  
+                            <i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i>
+                         </a>
+                             </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
        <!-- Contact Section -->
 <!-- Contact Section -->
 <!-- Contact Section -->
@@ -481,7 +510,7 @@
             </div>
             <div class="col-md-6">
                 <!-- Add your contact form here -->
-                <div>
+                <div class="contact-img">
                     <!-- Form fields go here -->
                     <img src="products/address2jpg.jpg" height="400px" width="700px" alt="">
                 </div>
