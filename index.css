@@ -7,7 +7,7 @@
         
       /* Image section*/
       .image-section{
-        background: url("../home/background.png");
+        background: url("background.png");
         height: 33rem;
         background-position: center center;
         background-attachment: fixed;
