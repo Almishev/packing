@@ -69,6 +69,10 @@
         body {
     background-color: whitesmoke; /* Test background color */
 }
+.carousel-item img {
+    object-fit: cover;
+    height: 410px;
+}
 
 .carousel-caption {
    
