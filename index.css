@@ -65,18 +65,18 @@
        
     }
 
-    @media (max-width: 668px) {
+    @media (max-width: 768px) {
         body {
     background-color: whitesmoke; /* Test background color */
 }
 .carousel-item img {
     object-fit: cover;
-    height: 600px;
+    height: 450px;
 }
 
 .carousel-caption {
    
-    margin-bottom: 1px !important;
+    margin-bottom: 80px !important;
     padding : 2px;
 }
 .contact-img img{
