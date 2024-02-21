@@ -4,50 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>opakovki goce delchev</title>
+    
+    <title>Συσκευασία Γκότσε Ντέλτσεφ</title>
 
     <!-- Bootstrap CSS -->
+    
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <!-- Custom CSS -->
-    <style>
-       
-        /* Custom styles for the sections */
-        section {
-            margin-bottom: 40px;
-        }
-
-        /* Style for the call-to-action button */
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-
-        .btn-primary:hover {
-            background-color: #0056b3;
-            border-color: #0056b3;
-        }
-       
-        .navbar-dark .navbar-nav .nav-item .nav-link {
-         
-           text-transform: uppercase;
-          
-           font-size: 19px;
-        }
-
-        .navbar-dark .navbar-nav .nav-item:hover .nav-link {
-            color: greenyellow;
-            text-decoration: underline;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Your Shop</a>
+     
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+          </svg> Συσκευασία Γκότσε Ντέλτσεφ  <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+            <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+          </svg> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,28 +31,35 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">αρχή</a>
+                    <a class="nav-link" href="#home">Αρχή</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Προϊόντα
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background:  darkgray;">
+                        <a class="dropdown-item"  href="#products-customer">Συσκευασία σύμφωνα με τις προδιαγραφές του πελάτη</a>
+                        <a class="dropdown-item"  href="#products-store">Τυπική συσκευασία σε απόθεμα</a>
+                    
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#products">Προϊόντα</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#our-materials">Τα Υλικά μας</a>
+                    <a class="nav-link" href="#our-materials">Τα υλικά μας</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#services">Υπηρεσίες</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Επικοινωνία</a>
+                    <a class="nav-link" href="#contact">Επαφές</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="flags/gr.png" alt="">
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#" onclick="changeLanguage('BG')"><img src="flags/bg.png" /></a>
-                        <a class="dropdown-item" href="#" onclick="changeLanguage('EN')"><img src="flags/us.png" /></a>
-                        <a class="dropdown-item" href="#" onclick="changeLanguage('GR')"><img src="flags/gr.png" /></a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('BG')"><img src="flags/bg.png" alt=""/></a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('EN')"><img src="flags/us.png" alt=""/></a>
+                        <a class="dropdown-item" href="#" onclick="changeLanguage('GR')"><img src="flags/gr.png" alt=""/></a>
                     </div>
                 </li>
             </ul>
@@ -84,124 +67,196 @@
         </div>
     </nav>
 
+    
+    
     <!-- Content -->
-    <div class="container mt-4">
+    <div class="container-fluid mt-4">
+        <h1 class="mb-4" style="text-align: center;"> <span class="h3">Καλώς ήλθατε </span> <span class="text-info"> Συσκευασία Γκότσε Ντέλτσεφ</span></h1>
 
+        
         <!-- Home Section -->
-        <section id="home">
-            <div class="jumbotron">
-                <h1 class="display-4">Welcome to Your Shop</h1>
-                <p class="lead">Discover amazing products and great deals.</p>
-                <hr class="my-4">
-                <p>Explore our wide range of products to find exactly what you need.</p>
-                <a class="btn btn-primary btn-lg" href="#products" role="button">Shop Now</a>
-            </div>
-        </section>
-
-        <!-- Products Section -->
-        <section id="products" class="mt-4">
-            <h2 class="text-center">Featured Products</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="product1.jpg" class="card-img-top" alt="Product 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Product 1</h5>
-                            <p class="card-text">Description of Product 1.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+        <section id="home" class="container-fluid">
+            <div id="textCarousel" class="carousel slide container mb-4" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/1.jpg" class="d-block w-100" alt="Image 1">
+                        <div class="carousel-caption" style="margin-bottom: 70px; " >
+                            <h5>Ατομικό Σχέδιο</h5>
+                            <p>
+                                Συνεργαζόμαστε μαζί σας για να δημιουργήσουμε συσκευασίες που αντικατοπτρίζουν τη μοναδικότητα του προϊόντος σας και τραβούν την προσοχή των πελατών.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/6.jpg" class="d-block w-100" alt="Image 2">
+                        <div class="carousel-caption" style="margin-bottom: 70px;">
+                            <h5>Υλικά</h5>
+                            <p>Χρησιμοποιούμε μόνο υλικά υψηλής ποιότητας, που εγγυώνται την αντοχή και την κομψότητα κάθε συσκευασίας.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/3.jpg" class="d-block w-100" alt="Image 3">
+                        <div class="carousel-caption" style="margin-bottom: 70px;">
+                            <h5>Φιλικότητα προς το περιβάλλον</h5>
+                            Προσπαθούμε να είμαστε φιλικοί προς το περιβάλλον, προσφέροντας φιλικές προς το περιβάλλον και βιώσιμες επιλογές συσκευασίας.
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/5.jpg" class="d-block w-100" alt="Image 3">
+                        <div class="carousel-caption" style="margin-bottom: 70px;">
+                            <h5>Ευέλικτες Λύσεις</h5>
+                            Είτε είστε startup, μικρή επιχείρηση ή μεγάλη εταιρεία, προσφέρουμε ευέλικτες λύσεις που καλύπτουν τις ανάγκες σας.
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#textCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" style="background-color: black" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#textCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" style="background-color: black" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        
+                     
+            <div class="jumbotron container">
+               
+                <p class="lead">Φτιάχνουμε όμορφα προϊόντα με την προσοχή στη λεπτομέρεια που μας ξεχωρίζει.</p>
+                <hr class="my-4">
+                <p>Παρέχουμε υπηρεσίες υψηλής ποιότητας για τη δημιουργία εξατομικευμένων και επαγγελματικών συσκευασιών που όχι μόνο προστατεύουν το προϊόν σας, αλλά και του προσδίδουν μοναδικό χαρακτήρα και στυλ. Η συσκευασία μας έχει σχεδιαστεί με προσοχή στη λεπτομέρεια και έχει κατασκευαστεί για να ενισχύει το όραμα και την ταυτότητα της επωνυμίας σας.</p>
+                
+               
+            </div>
+        </section>
+
+        <!-- Products Section Store -->
+       
+        
+        <section id="products-store" class="mt-4 container">
+            <h2 class="text-center">Τυπική συσκευασία σε απόθεμα</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/storepacket1.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/storepacket2.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/storeimae3jpg.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/storepacket4.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                
+              
+    
                 <!-- Add more product cards as needed -->
             </div>
+            
+            
+                
+                <!-- Add more product cards as needed -->
+           
+        </section>
+
+        <!--Product section Customer-->
+        <section id="products-customer" class="mt-4 container">
+            <h2 class="text-center">Συσκευασία σύμφωνα με τις προδιαγραφές του πελάτη</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/custspecifika.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/custspec.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/custp.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/spcuspg.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/cus.jpg" style="height: 200px;" class="card-img-top" alt="Product 1">
+                        
+                    </div>
+                </div>
+               
+               
+              
+            
+                <!-- Add more product cards as needed -->
+            </div>
+            
+            
+                
+                <!-- Add more product cards as needed -->
+           
         </section>
         <!-- Our Materials Section -->
 <section id="our-materials" class="mt-4">
     <div class="container">
-        <h2>Τα Υλικά μας</h2>
+        <h2>Τα υλικά μας</h2>
         <div class="row">
             <!-- Material 1 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-lg-6 col-md-4 mb-4">
                 <div class="card">
-                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
+                    <img src="images/material.jpg" style="height: 350px;" class="card-img-top" alt="Material 1">
                     <div class="card-body">
-                        <h5 class="card-title">Υλικό 8</h5>
-                        <p class="card-text">Περιγραφή Υλικού 1.</p>
+                        <h5 class="card-title">Ετικέτες χαρτιού και πολυαιθυλενίου</h5>
+                        <p class="card-text">
+                            Εκτός από τους διάφορους τύπους συσκευασιών που προσφέρουμε, μπορούμε επίσης να συμπεριλάβουμε ετικέτες για τις συσκευασίες μας με έγχρωμη εκτύπωση και μεγέθη από 10 x 10 mm έως 120 x 300 cm, καθώς και εξωτερικά banner, πληροφορίες και διαφημιστικά πάνελ για τα συσκευασμένα εμπορεύματα.
+ Ένα άλλο μέρος αυτού του τομέα είναι οι μεμβράνες νάιλον και ελαστικότητας που προσφέρουμε για τη συσκευασία παλετών και χαρτοκιβωτίων και οι οποίες συχνά συμβαδίζουν με τις ετικέτες και τις αυτοκόλλητες ταινίες τους, καθώς και από πολυαιθυλένιο και χαρτί.
+                        </p>
                     </div>
                 </div>
             </div>
             <!-- Material 2 -->
-            <div class="col-md-4 mb-4">
+            <div class="col-lg-6 col-md-4 mb-4">
                 <div class="card">
-                    <img src="material2.jpg" class="card-img-top" alt="Material 2">
+                    <img src="images/2.jpg" style="height: 350px;" class="card-img-top" alt="Material 2">
                     <div class="card-body">
-                        <h5 class="card-title">Υλικό 7</h5>
-                        <p class="card-text">Περιγραφή Υλικού 2.</p>
+                        <h5 class="card-title">Χαρτί, χαρτόνι, κυματοειδές χαρτόνι και άλλα κυτταρινικά υλικά</h5>
+                        <p class="card-text">Η ποικιλία των πακέτων που προσφέρουμε είναι η πιο ολοκληρωμένη στη χώρα, αν όχι σε ολόκληρη την περιοχή της Νοτιοανατολικής Ευρώπης. Ξεκινώντας από λευκά, τυπωμένα κουτιά, μέσω όλων των τύπων εκτύπωσης - flexo, offset, ψηφιακή, οθόνη και γκραβούρα και ολοκληρώνοντας την προσφορά με όλους τους τύπους επιλογών φινιρίσματος - δίπλωμα όλων των τύπων ραφών, παραθύρων, θερμής στάμπας, εξατομίκευση με γραμμωτούς κώδικες, πλαστικοποίηση, λάκα, και άλλα.</p>
                     </div>
                 </div>
             </div>
-            <!-- Material 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="material3.jpg" class="card-img-top" alt="Material 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Υλικό 6</h5>
-                        <p class="card-text">Περιγραφή Υλικού 3.</p>
-                    </div>
-                </div>
-            </div>
+           
             <!-- Add more material cards as needed -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Υλικό 5</h5>
-                        <p class="card-text">Περιγραφή Υλικού 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Υλικό 4</h5>
-                        <p class="card-text">Περιγραφή Υλικού 4.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Υλικό 1</h5>
-                        <p class="card-text">Περιγραφή Υλικού 1.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Υλικό 2</h5>
-                        <p class="card-text">Περιγραφή Υλικού 2.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="material1.jpg" class="card-img-top" alt="Material 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Υλικό 3</h5>
-                        <p class="card-text">Περιγραφή Υλικού 3.</p>
-                    </div>
-                </div>
-            </div>
+           
+        
+           
+            
         </div>
     </div>
 </section>
 
-
-         
 <!-- Services Section -->
 <section id="services" class="mt-4">
     <div class="container">
@@ -212,10 +267,10 @@
             <!-- Service 1 Card -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card">
-                    <img src="service1.jpg" class="card-img-top" alt="Service 1">
+                    <img src="images/proektirane.jpg" class="card-img-top" style="height: 200px;" alt="Service 1">
                     <div class="card-body">
-                        <h5 class="card-title">Υπηρεσία 1</h5>
-                        <p class="card-text">Πριν ξεκινήσει η παραγωγή της συσκευασίας, πρέπει να σχεδιαστεί η δομή και η εμφάνισή της. Ως υπηρεσία, μπορούμε να προσφέρουμε ολοκληρωμένη ανάπτυξη ιδέας, σχεδιασμό και παραγωγή εξωτερικού σχεδιασμού συσκευασιών οποιουδήποτε τύπου - χαρτί, χαρτόνι, μέταλλο, ξύλο και πλαστικό.</p>
+                        <h5 class="card-title">Σχεδιασμός και σχεδιασμός συσκευασίας</h5>
+                        <p class="card-text">Ανάπτυξη σχεδίων και ιδεών συσκευασίας που ανταποκρίνονται στις ανάγκες και τα στυλ των πελατών.</p>
                     </div>
                 </div>
             </div>
@@ -223,10 +278,13 @@
             <!-- Service 2 Card -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card">
-                    <img src="service2.jpg" class="card-img-top" alt="Service 2">
+                    <img src="images/proizvodstvo.jpg" class="card-img-top" style="height: 200px;" alt="Service 2">
                     <div class="card-body">
-                        <h5 class="card-title">Υπηρεσία 2</h5>
-                        <p class="card-text">Πριν ξεκινήσει η παραγωγή της συσκευασίας, πρέπει να σχεδιαστεί η δομή και η εμφάνισή της. Ως υπηρεσία, μπορούμε να προσφέρουμε ολοκληρωμένη ανάπτυξη ιδέας, σχεδιασμό και παραγωγή εξωτερικού σχεδιασμού συσκευασιών οποιουδήποτε τύπου - χαρτί, χαρτόνι, μέταλλο, ξύλο και πλαστικό.</p>
+                        <h5 class="card-title">Παραγωγή συσκευασίας</h5>
+                        <p class="card-text">
+                            Κατασκευή διαφόρων τύπων συσκευασιών, συμπεριλαμβανομένων κιβωτίων, σακουλών,
+                            γράμματα και λογότυπα Παροχή επιλογών προσαρμογής συσκευασίας, συμπεριλαμβανομένων διαφορετικών μεγεθών, σχημάτων, χρωμάτων και εκτυπώσεων.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -234,10 +292,10 @@
             <!-- Service 3 Card -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card">
-                    <img src="service3.jpg" class="card-img-top" alt="Service 3">
+                    <img src="images/pe4atopakovki.jpg" class="card-img-top" style="height: 200px;" alt="Service 3">
                     <div class="card-body">
-                        <h5 class="card-title">Υπηρεσία 3</h5>
-                        <p class="card-text">Πριν ξεκινήσει η παραγωγή της συσκευασίας, πρέπει να σχεδιαστεί η δομή και η εμφάνισή της. Ως υπηρεσία, μπορούμε να προσφέρουμε ολοκληρωμένη ανάπτυξη ιδέας, σχεδιασμό και παραγωγή εξωτερικού σχεδιασμού συσκευασιών οποιουδήποτε τύπου - χαρτί, χαρτόνι, μέταλλο, ξύλο και πλαστικό..</p>
+                        <h5 class="card-title">Εκτύπωση σε συσκευασίες</h5>
+                        <p class="card-text">Χρησιμοποιώντας διαφορετικές τεχνικές εκτύπωσης όπως ψηφιακή εκτύπωση, flexo εκτύπωση, εκτύπωση όφσετ και άλλες για να επιτύχετε το επιθυμητό οπτικό αποτέλεσμα.</p>
                     </div>
                 </div>
             </div>
@@ -247,25 +305,24 @@
         </div>
     </div>
 </section>
-       <!-- Working Hours Section -->
-<section id="working-hours" class="mt-4" >
-    <div class="container" style="max-width: 600px;">
-        <h2>Είστε ευπρόσδεκτοι εδώ στη διεύθυνση</h2>
 
-        <p><strong>Διεύθυνση:</strong> Panairski Livadi 2, 2900 Goce Delchev</p>
+<section id="working-hours" class="mt-4" style="background-image: url('products/address.jpg'); background-size: cover; background-position: center;">
+    <div class="container" style="max-width: 600px; background-color: rgba(214, 200, 219, 0.8); padding: 20px;">
+        <h2>καλως ΗΡΘΑΤΕ</h2>
+        <p><strong>Διεύθυνση:</strong> Παναίρσκι Λιβάδι 2, 2900 Γκότσε Ντέλτσεφ</p>
 
-        <p><strong>Ωρες εργασίας:</strong></p>
+        <p><strong>Ωρα εργασίας:</strong></p>
         <table class="table" style="border: 2px solid;">
             <thead>
                 <tr>
-                    <th scope="col">Ημέρα</th>
+                    <th scope="col">Ημέρες</th>
                     <th scope="col">Ωρες</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Sunday</td>
-                    <td>Closed</td>
+                    <td>Κυριακή</td>
+                    <td>Κλειστό</td>
                 </tr>
                 <tr>
                     <td>Δευτέρα</td>
@@ -297,9 +354,27 @@
         <p><strong>Τηλέφωνο:</strong> 089 055 1479</p>
     </div>
 </section>
+        <!-- Parax Section -->
+        <div class="container-fluid image-section p-5">
+            <div class="row h-100">
+                <div class="col-12 h-100 d-flex flex-column text-center justify-content-center align-items-center">
+                    <h3 class="display-5 text-white">Ακολουθησε μας.</h3>
+                    <div>
+                        <button class="btn btn-info" style="width: 120px; height: 50px; font-size: 22px;">
+                        <a href="https://www.facebook.com/profile.php?id=61550894019625">  
+                            <i class="fab fa-facebook-f fa-2x" style="color: #3b5998;"></i>
+                        </a>
+                        </button>
+                        <button class="btn btn-danger" style="width: 120px; height: 50px; font-size: 22px;">
+                          <a href="https://www.instagram.com/opakovkigotsedelchev/">  
+                            <i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i>
+                         </a>
+                             </button>
+                    </div>
+                </div>
+            </div>
 
-
-        <!-- Contact Section -->
+        </div>
        <!-- Contact Section -->
 <!-- Contact Section -->
 <!-- Contact Section -->
@@ -307,29 +382,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h2>Επικοινωνήστε μαζί μας</h2>
-                <p>Έχετε ερωτήσεις ή χρειάζεστε βοήθεια; Επικοινωνήστε με την ομάδα υποστήριξής μας</p>
+                <h2>επικοινωνήστε μαζί μας</h2>
+                Παναίρσκι Λιβάδι 2, 2900 Γκότσε Ντέλτσεφ
+                <p>Έχετε ερωτήσεις - επικοινωνήστε μαζί μας.</p>
+                <p>0877382224</p>
+                <p>antonalmishev@abv.bg</p>
             </div>
             <div class="col-md-6">
                 <!-- Add your contact form here -->
-                <form>
+                <div class="contact-img">
                     <!-- Form fields go here -->
-                    <button type="submit" class="btn btn-primary">Να στείλετε μήνυμα</button>
-                </form>
+                    <img src="products/address2jpg.jpg" height="400px" width="700px" alt="">
+                </div>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-md-12">
                 <!-- Update the embedded Google Map with your provided link -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d360.5100973303153!2d23.74620610020329!3d41.54933903389198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sbg!2sbg!4v1705266670495!5m2!1sbg!2sbg" 
-                width="100%" 
-                height="300px"
-        
-                  allowfullscreen=""
-                   loading="lazy" 
-                   referrerpolicy="no-referrer-when-downgrade">
-        
-                   </iframe>
+                
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.588719701895!2d23.74319117087183!3d41.57814505848527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14abbffb6cf601a3%3A0x842675b1f3c8bb32!2z0J7Qv9Cw0LrQvtCy0LrQuCDQk9C-0YbQtSDQlNC10LvRh9C10LI!5e0!3m2!1sbg!2sbg!4v1708467562032!5m2!1sbg!2sbg" 
+                   width="100%" 
+                   height="500px"
+           
+                     allowfullscreen=""
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
             </div>
         </div>
     </div>
@@ -340,7 +418,7 @@
 
     <footer class="bg-dark text-white mt-5 py-2">
         <div class="container text-center">
-            <p>&copy; 2024 Το κατάστημά σας | Αγορά για συσκευασία</p>
+            <p>&copy; 2024 Γκότσε Ντέλτσεφ | Αγορά υλικών συσκευασίας στο Γκότσε Ντέλτσεφ</p>
             <!-- Subscription form can be added here -->
         </div>
     </footer>
@@ -349,16 +427,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
-
-
+    
     <!-- Font Awesome JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
 
     <!-- Your custom scripts -->
-    <script src="language.js">
-    </script>
+    <script src="language.js"> </script>
+    
+
 
 </body>
 
